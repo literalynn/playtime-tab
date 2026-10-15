@@ -1,0 +1,14 @@
+plugins {
+    // 26.x is unobfuscated: no-remap loom.
+    id "dev.architectury.loom-no-remap" version "1.17.491"
+}
+
+version = "1.1.0"
+base { archivesName = "playtimetab" }
+
+dependencies {
+    minecraft "com.mojang:minecraft:26.3"
+    implementation "net.fabricmc:fabric-loader:0.19.5"
+}
+
+tasks.withType(JavaCompile).configureEach { options.release = 25 }

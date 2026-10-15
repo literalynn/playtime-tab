@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "playtimetab",
+  "version": "1.1.0",
+  "name": "Playtime Tab",
+  "description": "Shows each player's hours played in the tab list.",
+  "license": "MIT",
+  "environment": "*",
+  "mixins": ["playtimetab.mixins.json"],
+  "depends": { "fabricloader": ">=0.17.0", "minecraft": ">=26.3-" }
+}
